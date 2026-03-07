@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Silva Connect | Link que Vende</title>
+<title>Silva Connect | Link Profissional que Vende</title>
 
-<meta name="description" content="Transforme seu WhatsApp em uma máquina de vendas com link profissional personalizado">
+<meta name="description" content="Tenha um link profissional para WhatsApp que aumenta cliques, gera confiança e faz você vender muito mais.">
 
 <style>
 
@@ -16,13 +17,14 @@
 --bg2:#020617;
 --green:#25D366;
 --greenHover:#1ebe5d;
+--card:rgba(255,255,255,.06);
 }
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -32,17 +34,16 @@ text-align:center;
 overflow-x:hidden;
 }
 
-/* LOADING */
+/* LOADER */
 
 #loader{
 position:fixed;
-width:100%;
-height:100%;
+inset:0;
 background:#020617;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:22px;
+font-size:20px;
 z-index:9999;
 }
 
@@ -56,10 +57,6 @@ padding:40px 20px;
 
 /* HERO */
 
-.hero{
-margin-top:10px;
-}
-
 .hero h1{
 font-size:32px;
 margin-bottom:12px;
@@ -67,24 +64,24 @@ margin-bottom:12px;
 
 .hero p{
 opacity:.9;
-margin-bottom:20px;
+margin-bottom:22px;
 }
 
-/* BOTÕES */
+/* BOTÃO */
 
 .btn{
 display:block;
 width:100%;
 padding:18px;
-margin:15px 0;
+margin:18px 0;
 background:var(--green);
 color:white;
 text-decoration:none;
 font-weight:bold;
 border-radius:14px;
-transition:.3s;
-box-shadow:0 15px 40px rgba(0,0,0,.6);
-animation:pulse 1.4s infinite;
+transition:.25s;
+box-shadow:0 12px 30px rgba(0,0,0,.5);
+animation:pulse 1.6s infinite;
 }
 
 .btn:hover{
@@ -92,28 +89,25 @@ background:var(--greenHover);
 transform:scale(1.04);
 }
 
-/* ANIMAÇÃO BOTÃO */
-
 @keyframes pulse{
 
 0%{
 transform:scale(1);
-box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+box-shadow:0 0 0 0 rgba(37,211,102,.7);
 }
 
 70%{
-transform:scale(1.06);
-box-shadow:0 0 30px 10px rgba(37,211,102,0.4);
+transform:scale(1.05);
+box-shadow:0 0 0 18px rgba(37,211,102,0);
 }
 
 100%{
 transform:scale(1);
-box-shadow:0 0 0 0 rgba(37,211,102,0);
 }
 
 }
 
-/* BENEFICIOS */
+/* SEÇÕES */
 
 .section{
 margin-top:45px;
@@ -123,24 +117,18 @@ margin-top:45px;
 margin-bottom:20px;
 }
 
+/* BENEFÍCIOS */
+
 .benefits{
 list-style:none;
 }
 
 .benefits li{
-background:rgba(255,255,255,.06);
+background:var(--card);
 padding:16px;
 margin-bottom:12px;
 border-radius:10px;
 text-align:left;
-}
-
-/* PROVA SOCIAL */
-
-.social-proof{
-margin-top:30px;
-font-size:14px;
-opacity:.8;
 }
 
 /* PREÇO */
@@ -150,21 +138,21 @@ background:white;
 color:#0f172a;
 padding:30px;
 border-radius:18px;
-margin-top:25px;
+margin-top:20px;
 box-shadow:0 15px 40px rgba(0,0,0,.5);
 }
 
 .old-price{
 text-decoration:line-through;
 opacity:.6;
-font-size:22px;
+font-size:20px;
 }
 
 .price{
-font-size:44px;
+font-size:42px;
 font-weight:bold;
 color:#16a34a;
-margin:10px 0;
+margin:8px 0;
 }
 
 /* DEPOIMENTOS */
@@ -174,7 +162,7 @@ margin-top:35px;
 }
 
 .testimonial{
-background:rgba(255,255,255,.07);
+background:var(--card);
 padding:18px;
 border-radius:12px;
 margin-bottom:12px;
@@ -208,22 +196,6 @@ text-decoration:none;
 box-shadow:0 10px 25px rgba(0,0,0,.6);
 }
 
-/* DINHEIRO */
-
-.money{
-position:fixed;
-top:-40px;
-font-size:24px;
-animation:fall linear forwards;
-}
-
-@keyframes fall{
-to{
-transform:translateY(120vh);
-opacity:0;
-}
-}
-
 footer{
 margin-top:40px;
 opacity:.6;
@@ -244,7 +216,7 @@ font-size:14px;
 
 <div class="hero">
 
-<h1>Transforme Seu WhatsApp em Uma Máquina de Vendas 🚀</h1>
+<h1>Transforme seu WhatsApp em uma Máquina de Vendas 🚀</h1>
 
 <p>
 Tenha um link profissional que aumenta cliques, gera confiança e faz você vender muito mais.
@@ -256,10 +228,6 @@ target="_blank">
 🚀 Quero Meu Link Agora
 </a>
 
-<div class="social-proof">
-🔥 Mais de 100 empreendedores já usam
-</div>
-
 </div>
 
 <div class="section">
@@ -267,7 +235,7 @@ target="_blank">
 <h2>O que você recebe</h2>
 
 <ul class="benefits">
-<li>✅ Link personalizado profissional</li>
+<li>✅ Link profissional personalizado</li>
 <li>✅ QR Code para clientes</li>
 <li>✅ Mais autoridade nas redes sociais</li>
 <li>✅ Mais contatos no WhatsApp</li>
@@ -297,37 +265,8 @@ target="_blank">
 <a class="btn"
 href="https://wa.me/5561982833724?text=Quero%20comprar"
 target="_blank">
-💬 Comprar Pelo WhatsApp
+💬 Comprar pelo WhatsApp
 </a>
-
-<div class="testimonials">
-
-<h2>Depoimentos</h2>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-"Depois que comecei usar meu link personalizado meus clientes clicam muito mais."  
-— Marcos
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐  
-"Deixa o negócio muito mais profissional."  
-— Juliana
-</div>
-
-</div>
-
-<div class="guarantee">
-
-<h3>Garantia de Satisfação</h3>
-
-<p>
-Se você não gostar do seu link personalizado,
-refazemos até ficar perfeito para seu negócio.
-</p>
-
-</div>
 
 </div>
 
@@ -336,7 +275,7 @@ refazemos até ficar perfeito para seu negócio.
 </footer>
 
 <a class="whatsapp"
-href="https://wa.me/5561982833724?text=Quero%20meu%20link%20profissional"
+href="https://wa.me/5561982833724"
 target="_blank">
 💬
 </a>
@@ -345,53 +284,10 @@ target="_blank">
 
 /* LOADER */
 
+window.onload = () =>{
 setTimeout(()=>{
-document.getElementById("loader").style.display="none"
-},1800)
-
-/* DINHEIRO CAINDO */
-
-function moneyRain(){
-
-let m=document.createElement("div")
-
-m.className="money"
-
-m.innerHTML="💸"
-
-m.style.left=Math.random()*100+"%"
-
-m.style.animationDuration=(3+Math.random()*2)+"s"
-
-document.body.appendChild(m)
-
-setTimeout(()=>{
-m.remove()
-},5000)
-
-}
-
-setInterval(moneyRain,1200)
-
-</script>
-
-</body>
-</html>tml>d(m)
-
-setTimeout(()=>{
-m.remove()
-},5000)
-
-}
-
-setInterval(moneyRain,1200)
-
-/* PWA */
-
-if("serviceWorker" in navigator){
-
-navigator.serviceWorker.register("service-worker.js")
-
+document.getElementById("loader").remove()
+},900)
 }
 
 </script>
